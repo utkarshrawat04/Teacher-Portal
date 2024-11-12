@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark Attendance"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/newStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student Name"/>
+
+    <EditText
+        android:id="@+id/newSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject Name"/>
+
+    <Button
+        android:id="@+id/addStudentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"/>
+
+    <ListView
+        android:id="@+id/attendanceList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <Button
+        android:id="@+id/exportCsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export Attendance"/>
+
+    <Button
+        android:id="@+id/deleteAllRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete All Records"/>
+</LinearLayout>
